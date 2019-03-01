@@ -18,12 +18,22 @@ client.on('ready', function() {
 
 
 
-client.on('ready', () => {
-client.user.setGame('BroadCast II -bc','https://www.twitch.tv/kemo355');
-console.log('Logging into discord..');
-console.log(`
-By Ҝ€₥σ
-`);
+client.on('ready', function(){
+    client.user.setStatus("online");
+    var ms = 100000 ;
+    var setGame = [`By ! The Fallen Admiral#2019`,`-bc`];
+    var i = -1;
+    var j = 0;
+    setInterval(function (){
+        if( i == -1 ){
+            j = 1;
+        }
+        if( i == (setGame.length)-1 ){
+            j = -1;
+        }
+        i = i+j;
+        client.user.setGame(setGame[i],`http://www.twitch.tv/KiNg66S`);
+    }, ms);100000
 
 });
 
