@@ -20,7 +20,7 @@ client.on('ready', function() {
 
 client.on('ready', function(){
     client.user.setStatus("online");
-    var ms = 180 ;
+    var ms = 1800 ;
     var setGame = [`By ! The Fallen Admiral#2019`,`-bc`];
     var i = -1;
     var j = 0;
@@ -33,7 +33,7 @@ client.on('ready', function(){
         }
         i = i+j;
         client.user.setGame(setGame[i],`http://www.twitch.tv/KiNg66S`);
-    }, ms);180
+    }, ms);1800
 
 });
 
