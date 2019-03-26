@@ -37,7 +37,7 @@ client.on('message', message => {
   if (message.guild) {
   let embed = new Discord.RichEmbed()
   let args = message.content.split(' ').slice(1).join(' ');
-  if(message.content.split(' ')[0] == prefix + '1bc') {
+  if(message.content.split(' ')[0] == prefix + '-bc') {
   if(!message.channel.guild) return message.reply('**❌ اسف لكن هذا الامر للسيرفرات فقط **');         
   if (!args[1]) {
   return;
